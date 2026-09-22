@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jevai.it.com/sitemap.xml

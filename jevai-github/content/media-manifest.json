@@ -1,0 +1,74 @@
+{
+  "status": "awaiting_original_assets",
+  "source_article_url": null,
+  "assets": [
+    {
+      "path": "/media/typesafe-jev-guide/flavio-meet-jev.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/flavio-console-home.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-race-27q-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-race-27q.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/ts-workflow-evals-pareto.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-wikirace-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-wikirace.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-doom-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/jev-doom.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-email-triage-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-email-triage.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-browser-agent-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-browser-agent.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-jev-trader-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-jev-trader.mp4",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-typewriter-poster.jpg",
+      "available": false
+    },
+    {
+      "path": "/media/typesafe-jev-guide/community-typewriter.mp4",
+      "available": false
+    }
+  ]
+}
