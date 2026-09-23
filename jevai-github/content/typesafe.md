@@ -22,4 +22,4 @@ These resources are maintained by their respective authors and organizations. Th
 
 Use current documentation for implementation, read limitations before automating decisions, and treat vendor demonstrations or project-reported numbers as measurements of their specific setups.
 
-For a practical walkthrough, start with the [English field guide](/guide/). To find something to build with, browse the [46-project directory](/).
+For a practical walkthrough, start with the [four-step setup](/how-to-use-jev/). To find something to build with, browse the [Jev project directory](/).

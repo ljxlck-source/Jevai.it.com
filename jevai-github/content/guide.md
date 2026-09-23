@@ -279,13 +279,13 @@ The article describes `langchain-typesafe` and middleware patterns for model rou
 
 Read [LangChain’s own integration article](https://www.langchain.com/blog/building-a-harness-with-jev) for its current implementation and interfaces.
 
-### The 46-project directory
+### The Jev project directory
 
-The directory accompanying this guide preserves 46 source links across ten categories. These include model and skill routing, guardrails, code review, browser tools, content checks, office workflows, context management, experiments, evaluation and independent model implementations.
+The directory accompanying this guide organizes source links by use case. These include model and skill routing, guardrails, code review, browser tools, content checks, office workflows, context management, experiments, evaluation and independent model implementations.
 
-It includes repositories, posts and demonstrations—not 46 hosted applications. Independent models are not official Jev weights. Inclusion does not imply endorsement, tested functionality or a security audit.
+It includes repositories, posts and demonstrations—not a collection of hosted applications. Independent models are not official Jev weights. Inclusion does not imply endorsement, tested functionality or a security audit.
 
-[Explore all 46 entries](/#directory), or begin with [model and skill routing](/?category=route#directory) and [context management](/?category=context#directory).
+[Explore the project directory](/#directory), or begin with [model and skill routing](/?category=route#directory) and [context management](/?category=context#directory).
 
 ## More worked examples from the source article
 

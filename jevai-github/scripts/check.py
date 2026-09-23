@@ -37,10 +37,13 @@ for file,p in pages.items():
   assert dest.exists(),(file,'broken reference',ref)
   if u.fragment and dest.suffix=='.html':assert unquote(u.fragment) in pages[dest].ids,(file,'broken anchor',ref)
 project_data=json.loads((ROOT/'content/projects.json').read_text())
-assert len(project_data)==46 and len({p['url'] for p in project_data})==46
-home=pages[OUT/'index.html'];assert home.cards==46
+assert project_data and len({p['url'] for p in project_data})==len(project_data)
+home=pages[OUT/'index.html'];assert home.cards==len(project_data)
 assert all(p['url'] in home.refs for p in project_data)
 assert len({p['category'] for p in project_data})==10
 assert 'G-6B7H863MFF' in (OUT/'assets/site.js').read_text()
-assert len(re.findall(r'\S+', (ROOT/'content/guide.md').read_text()))>3500
-print(f'PASS: {len(pages)} HTML documents, 46 original project URLs, 10 categories, metadata, local assets, internal anchors, structured data, GA ID and guide length.')
+assert (OUT/'examples/index.html').exists()
+assert 'The guide' not in (OUT/'index.html').read_text()
+assert '/guide/' not in (OUT/'sitemap.xml').read_text()
+assert 'Official TypeSafe ↗' not in (OUT/'index.html').read_text()
+print(f'PASS: {len(pages)} HTML documents, {len(project_data)} original project URLs, 10 categories, metadata, local assets, internal anchors, structured data, GA ID and restructured routes.')

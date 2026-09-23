@@ -1,40 +1,32 @@
-## A model for decisions inside software
+## Jev in one minute
 
-Jev is TypeSafe AI’s first System One model. It evaluates supplied context against focused questions and returns typed decisions: a choice, a score or a probability. The surrounding program decides what happens next.
+- **Turn AI tasks into multiple-choice questions.** Give Jev context and candidate answers. Choice questions return an option, probabilities and confidence. The source article reports responses in hundreds of milliseconds; your latency will depend on the request and network.
+- **Use it for frequent small decisions.** Route requests, classify content, check whether summaries match a source, or assess agent tool risks without asking a generative model to write another answer each time.
+- **Let a coding agent handle the integration.** Codex or Claude Code can install the TypeSafe skill, write the API calls and test your workflow. You define the task and review the results.
+- **Start alongside your existing workflow.** Log predictions without changing live decisions. Set review thresholds using real examples and the cost of mistakes; send uncertain cases to a person or a larger model.
 
-A useful example is a support ticket. Your application supplies the ticket and the possible destinations—billing, technical support, sales or other. Jev evaluates those candidates. Your code routes the ticket, or sends an uncertain result for review.
+<figure><img src="/assets/typesafe-meet-jev.png" alt="TypeSafe console introduction showing Jev properties, limitations and benefits" width="2116" height="1310" loading="lazy"><figcaption>TypeSafe console introduction. Screenshot supplied with the source article, credited there to Flavio Copes. Product details may change.</figcaption></figure>
 
-This directory is an independent guide to that ecosystem. The model and its official services belong to [TypeSafe AI](https://typesafe.ai/).
+## What does Jev do?
 
-## Three building blocks
+Think of Jev as a decision step inside software. Your code controls the workflow; Jev helps when a branch depends on the meaning of a message, an intent or a risk. Writing, complex reasoning and executing actions remain separate jobs.
 
-| Primitive | What you define | What you use it for |
-| --- | --- | --- |
-| Choice | A finite set of candidates | Select a department, model, skill or action |
-| Score | An ordered rubric with meaningful levels | Evaluate urgency, relevance or quality |
-| Noul | A clear truth statement | Judge whether a condition holds |
+It can select a category, judge whether a statement is true, or score an input against a rubric. A valid answer is not necessarily a correct answer.
 
-These are constrained output shapes. A valid shape does not guarantee a correct judgment. A probability or confidence field needs to be understood in the context of its question type and evaluated on representative tasks.
+## Choose your next step
 
-Read the [worked examples in the full guide](/guide/#three-question-types) for a closer look at each primitive.
+- [Get started in four steps](/how-to-use-jev/).
+- [See a complete worked example](/examples/).
+- [Understand System One and the Jev name](/why-jev/).
+- [Browse projects by use case](/#directory).
 
-## Why the name System One?
+## Learn more about Jev
 
-TypeSafe’s terminology borrows the distinction between fast, intuitive System 1 thinking and deliberate System 2 reasoning from Daniel Kahneman’s *Thinking, Fast and Slow*. It is a product framing for fast judgments, not proof that the model reproduces human cognition.
-
-Jev is named after the economist William Stanley Jevons. The idea behind the name is that lower-cost intelligence could make new kinds of software automation practical. See the [original announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev).
-
-## Where a generative model still belongs
-
-Use a generative model to write explanations, draft text, produce code or carry out open-ended reasoning. Use ordinary code for exact arithmetic, dates, permissions and deterministic business rules. Consider Jev for the semantic judgments between those steps.
-
-An agent might use a larger model to plan a task, Jev to choose among known tools, and code to check permissions and execute the selected action. The choice itself is not permission to act.
-
-## Explore a real use case
-
-- [Model and skill routing](/?category=route#directory): select an appropriate candidate for a task.
-- [Context management](/?category=context#directory): decide which tool results remain useful.
-- [Browser automation](/?category=browser#directory): choose among actions available on a page.
-- [Evaluation](/?category=eval#directory): test assumptions and fit thresholds to your own data.
-
-Next: [Why use Jev?](/why-jev/) or [How to get started](/how-to-use-jev/).
+- [Why System One, and Why Jev?](/why-jev/).
+- [Jev Question Types: Noul, Choice and Score](/question-types/).
+- [Jev Confidence and Parallel Questions](/confidence/).
+- [Jev Speed, Cost and Accuracy](/performance/).
+- [Jev Official Demos and Community Projects](/demos/).
+- [Jev in Practice: Worked Examples](/use-cases/).
+- [Jev Limitations: When Not to Use It](/limitations/).
+- [A Gradual Jev Integration Plan](/integration/).

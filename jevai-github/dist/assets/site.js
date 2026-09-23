@@ -11,7 +11,7 @@
     input.value=params.get('q')||'';
     function update(){const q=input.value.trim().toLowerCase();let visible=0;for(const card of cards){card.hidden=!((category==='all'||card.dataset.category===category)&&card.dataset.search.includes(q));if(!card.hidden)visible++;}
       buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.category===category)));
-      count.textContent=visible===46?'Showing all 46 projects':`Showing ${visible} of 46 projects`;reset.hidden=category==='all'&&!q;document.getElementById('no-results').hidden=visible>0;
+      count.textContent=category==='all'&&!q?'Showing all projects':visible?'Showing matching projects':'No matching projects';reset.hidden=category==='all'&&!q;document.getElementById('no-results').hidden=visible>0;
       const next=new URL(location.href);next.searchParams.delete('category');next.searchParams.delete('q');if(category!=='all')next.searchParams.set('category',category);if(q)next.searchParams.set('q',input.value.trim());history.replaceState(null,'',next.pathname+next.search+next.hash);
     }
     function clear(){category='all';input.value='';update();}

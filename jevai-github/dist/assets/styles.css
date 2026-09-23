@@ -9,3 +9,15 @@
 /* Readability refinements for the directory’s primary controls and descriptions. */
 .category{font-size:14px}.project-card p{font-size:14px}.mark{background:#17121f}.prose .resource:hover{border-color:var(--purple);background:#241d30}
 @media(max-width:760px){.category{font-size:14px}.project-card p{font-size:14px}}
+
+/* A quieter, use-case-focused introduction. */
+.hero.hero-simple{display:block;padding:56px 0 38px;border-bottom:1px solid var(--line)}
+.hero-simple .eyebrow{margin:0 0 18px;font-size:12px;letter-spacing:1.5px}
+.hero.hero-simple h1{font-family:'DM Sans',Arial,sans-serif;font-size:clamp(32px,4.2vw,58px);font-weight:650;line-height:1.14;letter-spacing:-1.8px;margin:0;max-width:980px;text-transform:none}
+.hero-simple h1 em{font-style:normal;color:var(--green)}
+.hero-simple .hero-description{font-size:17px;line-height:1.7;max-width:800px;margin:22px 0}
+.hero-simple .hero-links{margin-top:24px;font-size:14px;gap:24px}
+.directory .section-heading h2{font-family:'DM Sans',Arial,sans-serif;font-size:28px;letter-spacing:-.6px}
+@media(max-width:700px){.hero.hero-simple{padding:32px 0 28px}.hero.hero-simple h1{letter-spacing:-1px}.hero-simple .hero-description{font-size:15px}.directory .section-heading h2{font-size:23px}}
+
+.prose figure{margin:28px 0}.prose figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px}.prose figcaption{font-size:12px;color:var(--muted);margin-top:10px}.page-heading h1{font-family:'DM Sans',Arial,sans-serif;font-size:clamp(32px,4vw,52px);letter-spacing:-1.3px;line-height:1.15}.nav-links{gap:20px;font-size:13px}.page-heading{padding-top:36px}.page-heading .lead{font-size:17px;max-width:820px}

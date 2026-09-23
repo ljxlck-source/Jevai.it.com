@@ -43,3 +43,7 @@ Static document checks and a lightweight DOM-fixture JavaScript interaction chec
 ## Deployment
 
 Use `dist/` as the public root on your static hosting provider. The included `vercel.json` sets this output directory for Vercel. Keep source content and scripts outside the public root. Connect and verify jevai.it.com separately. The root 404.html is supplied for hosts that support custom missing-page responses.
+
+## September 23 content update
+
+The long guide has been replaced by focused overview, setup, examples, question types, confidence, performance, demos, use cases, limitations and rollout pages. `/guide/` redirects to `/what-is-jev/` on Cloudflare Pages. Two supplied screenshots are included; remaining original media is pending. Navigation uses Official TypeSafe resources and no separate official-site header button.
